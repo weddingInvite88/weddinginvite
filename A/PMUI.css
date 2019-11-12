@@ -61,7 +61,7 @@ body{
 }
 .WALSE{
     width: 100%;
-    height: 200px;
+    height: 40vh;
     background-image: url(./PWE.jpg);
     background-position: center;
     background-repeat: no-repeat;
