@@ -6,32 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./A/DUI.css">
     <link rel="stylesheet" type="text/css" href="./A/PMUI.css">
-    <title>Document</title>
+    <title>P♥S</title>
 </head>
 <body>
-    <div class="MAIN CEN col-s-11" id="main">
+    <div class="MAIN CEN col-s-11 WID" id="main">
         <div class="HEAD MARTOBO" id="head">
-            <spna class="HECON " id="hecon">Camera Icon</spna>
-            <spna class="HECON CLEAR" id="hecon">The Wedding Party</spna>
-            <spna class="HECON " id="hecon">Share Icon</spna>
+            <spna class="HECON CLEAR" id="hecon">We are getting Married!</spna>
+            <hr>
         </div>
         <div class="DPSE MARTOBO" id="dpse">
-            <span><img src="" alt="DP"></span>
-            <p>Priyank MC</p>
+            <span><img src="./A/PDP.jpg" alt="DP"></span>
+            <p>Priyanka MC</p>
+            <hr>
         </div>
-        <div class="WALSE MARTOBO" id="walse">
-            Wallpaper goes here
-        </div>
+        <div class="WALSE MARTOBO" id="walse"></div>
         <div class="RESE MARTOBO" id="rese">
-            <span></span>
-            <span></span>
+            <span class="WADE"><div id="maind"><img src="./A/H.svg" alt=""></div><div id="cald"><img src="./A/C.svg" alt=""></div><div id="locd"><img src="./A/L.svg" alt=""></div></span>
+            <hr>
         </div>
-        <div class="INSE MARTOBO" id="inse">
-            Location, contat details goes here
-        </div>        
+        <div class="INSE MARTOBO" id="inse"></div>
     </div>
     <script>
-        document.querySelector('body').innerHTML = '<h3>Loding...'+'<br>'+'Check after sometime.</h3>';
+        var TWD;
+        var D = new Date()
+        let rd = 30;
+        let rm = 11;
+        let ry = 2019;
+        let RD = D.getDate()
+        let RM = (D.getMonth()+1)
+        let RY = D.getFullYear()
+        console.dir(RD)
+        if (RD === rd) {
+            TWD = 'Today';
+        }else if (RD === 29){
+            TWD = rd - RD + ' day to go';
+        }else{
+            TWD = rd - RD + ' days to go';
+        }
+        console.dir(TWD)        
+        function Hide(d){
+            document.getElementById(d).innerHTML = '';
+        }
+        function Show(s){
+            var son = document.getElementById(s);
+            son.style.display = 'block';
+
+        }
+        function ShowM(e){
+            var Con = document.getElementById(e);
+            var Nspan = document.createElement('span');
+            Nspan.setAttribute('id','maida');
+            Nspan.innerHTML = '<span><h4>#priyanka #weds #somashekar...</h4></span>' + '<hr>' + '<span><h4>Please celebrate with us the freshness of new life and new love as we exchange our wedding vows.</h4></span>';
+            Con.append(Nspan)
+        }        
+        
+        function ShowC(e){
+            var Con = document.getElementById(e);
+            var Nspan = document.createElement('span');
+            Nspan.setAttribute('id','calda');
+            Nspan.innerHTML = '<span><h3><u>Reception</u>: 30-11-2019 From 7:00pm onwards.</h4></span>' +'<hr>'+ '<span><h3><u>Muhurtha</u>: 01-12-2019 From 10:00am to 11:00am.</h3></span>' + '<br>' + '<span><div class="CONPI"><p class="CONP"><img class="HGT" src="./A/HGT.gif"></p><h4 class="CONP">'+TWD+'</h4></div></span>';
+            Con.append(Nspan)
+        }
+        function ShowL(e){
+            var Con = document.getElementById(e);
+            var Nspan = document.createElement('span');
+            Nspan.setAttribute('id','locda');
+            Nspan.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.279779649549!2d77.54096851482251!3d13.01784709082558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d9dc6f3381d%3A0xe41781fb26c9be62!2sSri%20Devamma%20Kari%20Gowda%20Convention%20Hall%2CMahalakshmi%20Layout%2Cbangalore!5e0!3m2!1sen!2sin!4v1573546557676!5m2!1sen!2sin" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe>';
+            Con.append(Nspan)
+        }
+        ShowM('inse')                
+        document.getElementById('maind').addEventListener('click',function(){
+            Hide('inse');
+            ShowM('inse');
+        });
+
+        document.getElementById('cald').addEventListener('click',function(){
+            Hide('inse');
+            ShowC('inse');
+        });
+        document.getElementById('locd').addEventListener('click',function(){
+            Hide('inse');
+            ShowL('inse');
+        });
     </script>
 </body>
 </html>
