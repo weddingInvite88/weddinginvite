@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+
+@font-face{
+    font-family: 'of';
+    src: url(./OF.TTF);
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+    font-size: small;
+}
+
+.WID {
+    width: 100%;
+    max-width: 360px;
+}
+
+.HEAD{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.HECON{
+    width: auto;
+    height: 36px;
+    display: inline-block;
+    background-color: rgba(138, 136, 136, 0.24);
+    margin: 2px 0px;
+    text-align: center;
+    font-family: 'of', cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.DPSE{
+    width: 100%;
+    height: auto;
+}
+
+.DPSE > span{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.DPSE > span > img{
+    width: 70px;
+    border-radius: 50%; 
+}
+
+.DPSE > p{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 34px;
+}
+.WALSE{
+    width: 100%;
+    height: 37vh;
+    background-image: url(./PWE.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.RESE{
+    width: 100%;
+    height: 40px;
+}
+.WADE > div{
+    display: inline-block;
+    margin-left: 10px;
+}
+.WADE > div:last-child{
+    margin-left: 3px;
+}
+.WADE > div > img{
+    width: 1.6em;
+}
+.INSE{
+    width: 100%;
+    height: 40px;
+}
+
+#maida > span:first-child{
+    color: rgb(7, 7, 100);
+}
+
+#calda{
+    text-align: left;
+}
+
+.HGT{
+    width: 25px;
+}
+
+.CONPI{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.CONP{
+    display: inline-block;
+}
+.CONP:last-child{
+    margin-left: 10px;
+    margin-top: 5px;
+    vertical-align: top;
+    animation: blin 3s infinite;
+    animation-fill-mode: forwards;
+}
+
+#locda > iframe{
+    width: 100%;
+    height: 20vh;
+}
+
+@keyframes blin{
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blin{
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blin{
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blin{
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
