@@ -144,13 +144,6 @@ hr{
     animation-delay: 2.5s;
 }
 
-.TII{
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    line-height: 15px;
-}
-
 @keyframes blin{
     from{
         opacity: 0.3;
