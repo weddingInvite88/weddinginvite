@@ -1,0 +1,149 @@
+body,h1,h2,h3,h4,h5,h6,p,a,div,span,table,tbody,td,th,thead,tr{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	box-sizing: broder-box;
+}
+
+@media print{
+    html,body{
+        display: none;
+    }
+}
+
+.MAIN{
+    /* width: 100px; */
+    height: 95vh;
+    background-color: #ffffff;
+    margin: 5px auto;
+    /* border: 1px solid black; */
+    padding: 2%;
+}
+
+.TAL{
+    text-align: center;
+}
+
+.CEN{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BOSH{
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);     
+}
+
+.BOHRB{
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);    
+}
+
+.CLEAR{
+    content: " ";
+    clear: both;
+}
+
+.MARTOBO{
+    margin: 10px 0px;
+}
+
+[class*="col-"] {
+    width: 95%;
+  }
+
+@media only screen and (max-width: 600px){
+    .MAIN::after{
+        /* content: "Small Phones"; */
+    }
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    
+    .MAIN{
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .MAIN::after{
+        /* content: "Normal Phones"; */
+    }
+    .col-ss-1 {width: 8.33%;}
+    .col-ss-2 {width: 16.66%;}
+    .col-ss-3 {width: 25%;}
+    .col-ss-4 {width: 33.33%;}
+    .col-ss-5 {width: 41.66%;}
+    .col-ss-6 {width: 50%;}
+    .col-ss-7 {width: 58.33%;}
+    .col-ss-8 {width: 66.66%;}
+    .col-ss-9 {width: 75%;}
+    .col-ss-10 {width: 83.33%;}
+    .col-ss-11 {width: 91.66%;}
+    .col-ss-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px){
+    .MAIN::after{
+        /* content: "Big Phones"; */
+    }
+    .col-sb-1 {width: 8.33%;}
+    .col-sb-2 {width: 16.66%;}
+    .col-sb-3 {width: 25%;}
+    .col-sb-4 {width: 33.33%;}
+    .col-sb-5 {width: 41.66%;}
+    .col-sb-6 {width: 50%;}
+    .col-sb-7 {width: 58.33%;}
+    .col-sb-8 {width: 66.66%;}
+    .col-sb-9 {width: 75%;}
+    .col-sb-10 {width: 83.33%;}
+    .col-sb-11 {width: 91.66%;}
+    .col-sb-12 {width: 100%;}    
+}
+
+@media only screen and (min-width: 992px){
+    .MAIN::after{
+        /* content: "Laptops / Desktops"; */
+    }
+    .col-sd-1 {width: 8.33%;}
+    .col-sd-2 {width: 16.66%;}
+    .col-sd-3 {width: 25%;}
+    .col-sd-4 {width: 33.33%;}
+    .col-sd-5 {width: 41.66%;}
+    .col-sd-6 {width: 50%;}
+    .col-sd-7 {width: 58.33%;}
+    .col-sd-8 {width: 66.66%;}
+    .col-sd-9 {width: 75%;}
+    .col-sd-10 {width: 83.33%;}
+    .col-sd-11 {width: 91.66%;}
+    .col-sd-12 {width: 100%;}    
+}
+
+@media only screen and (min-width: 1200px){
+    .MAIN::after{
+        /* content: "Large Desktops"; */
+    }
+    .col-ssd-1 {width: 8.33%;}
+    .col-ssd-2 {width: 16.66%;}
+    .col-ssd-3 {width: 25%;}
+    .col-ssd-4 {width: 33.33%;}
+    .col-ssd-5 {width: 41.66%;}
+    .col-ssd-6 {width: 50%;}
+    .col-ssd-7 {width: 58.33%;}
+    .col-ssd-8 {width: 66.66%;}
+    .col-ssd-9 {width: 75%;}
+    .col-ssd-10 {width: 83.33%;}
+    .col-ssd-11 {width: 91.66%;}
+    .col-ssd-12 {width: 100%;}
+}
