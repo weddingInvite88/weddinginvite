@@ -15,13 +15,18 @@
             <hr>
         </div>
         <div class="DPSE MARTOBO" id="dpse">
-            <span><img src="./A/PDP.jpg" alt="DP"></span>
+            <span>
+                <img src="./A/PDP.jpg" alt="DP">
+                <div class="DPCOV"></div>
+            </span>
             <p>Priyanka MC</p>
             <hr>
         </div>
         <div class="WALSE MARTOBO" id="walse">
-            <img src="./A/PWE.jpg" alt="Loding Image"/>
+            <img src="./A/PWE.jpg" alt="Loding Image" width="100"/>
+            <div class="IMGCOV"></div>
         </div>
+        
         <div class="RESE MARTOBO" id="rese">
             <span class="WADE"><div id="maind"><img src="./A/H.svg" alt=""></div><div id="cald"><img src="./A/C.svg" alt=""></div><div id="locd"><img src="./A/L.svg" alt=""></div></span>
             <hr>
@@ -29,6 +34,7 @@
         <div class="INSE MARTOBO" id="inse"></div>
     </div>
     <script>
+        window.onload = ProIm()
         var TWD;
         var D = new Date()
         let rd = 30;
@@ -90,6 +96,13 @@
             Hide('inse');
             ShowL('inse');
         });
+
+        function ProIm(){
+            var imhi = document.querySelector('.WALSE > img').height;
+            document.querySelector('.IMGCOV').style.height = imhi+7+'px';
+            // document.querySelector('.IMGCOV').style.top = imhi+130+'px';
+        }
+
     </script>
 </body>
 </html>
