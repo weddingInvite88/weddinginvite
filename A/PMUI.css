@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+
+@font-face{
+    font-family: 'of';
+    src: url(./OF.TTF);
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+    font-size: small;
+}
+
+hr{
+    height: 2px;
+    border-style: none;
+    border-width: 0px;
+    background-color: rgb(150, 150, 150);
+}
+
+.WID {
+    width: 100%;
+    max-width: 340px;
+}
+
+.HEAD{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+.HECON{
+    width: auto;
+    height: 36px;
+    display: inline-block;
+    background-color: rgba(138, 136, 136, 0.24);
+    margin: 2px 0px;
+    text-align: center;
+    font-family: 'of', cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.DPSE{
+    width: 100%;
+    height: auto;
+    
+}
+
+.DPSE > span{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 12px;
+    padding: 3px;
+    background: linear-gradient(-142deg,#BF0048,#FF9800);
+    position: relative;
+}
+
+.DPSE > span > img{
+    width: 70px;
+    border-radius: 50%; 
+}
+
+.DPCOV{
+    width: 76px;
+    height: 76px;
+    background-color: transparent !important;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+}
+.DPSE > p{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+}
+.WALSE{
+    width: 100%;
+    position: relative;
+}
+.WALSE > img{
+    width: 100%;
+}
+.IMGCOV{
+    width: 340px;
+    background-color: transparent !important;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+}
+.RESE{
+    width: 100%;
+    height: 40px;
+    position: sticky;
+}
+.WADE > div{
+    display: inline-block;
+    margin-left: 10px;
+}
+.WADE > div:last-child{
+    margin-left: 6px;
+}
+.WADE > div > img{
+    width: 1.6em;
+}
+.INSE{
+    width: 100%;
+    height: 40px;
+}
+
+#maida > span:first-child{
+    color: rgb(7, 7, 100);
+}
+
+#calda{
+    text-align: left;
+}
+
+.HGT{
+    width: 25px;
+}
+
+.CONPI{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.CONP{
+    display: inline-block;
+}
+.CONP:last-child{
+    margin-left: 10px;
+    margin-top: 5px;
+    vertical-align: top;
+    animation: blin 3s infinite;
+    animation-fill-mode: forwards;
+}
+
+#locda > iframe{
+    width: 100%;
+    height: 20vh;
+}
+
+
+.UND{
+    width: 2px;
+    height: 4px;
+    display: inline-block;
+    background: linear-gradient(to right,#BF0048 ,#FF9800);
+    border-radius: 10px;
+    vertical-align: top;
+    animation: wc 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.AD{
+    animation-delay: 2.5s;
+}
+
+@keyframes blin{
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blin{
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blin{
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blin{
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes wc{
+    from{
+        width: 2px;
+    }
+    to{
+        width: 75px;
+    }
+}
+
+@-o-keyframes wc{
+    from{
+        width: 2px;
+    }
+    to{
+        width: 75px;
+    }
+}
+
+@-moz-keyframes wc{
+    from{
+        width: 2px;
+    }
+    to{
+        width: 75px;
+    }
+}
+
+@-webkit-keyframes wc{
+    from{
+        width: 2px;
+    }
+    to{
+        width: 75px;
+    }
+}
