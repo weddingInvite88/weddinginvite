@@ -11,7 +11,7 @@
 <body>
     <div class="MAIN CEN col-s-11 WID" id="main">
         <div class="HEAD MARTOBO" id="head">
-            <spna class="HECON CLEAR" id="hecon">We are getting Married!</spna>
+            <spna class="HECON CLEAR" id="hecon"></spna>
             <hr>
         </div>
         <div class="DPSE MARTOBO" id="dpse">
@@ -40,18 +40,61 @@
         let rd = 30;
         let rm = 11;
         let ry = 2019;
+        let rrd = 1;
+        let rrm = 12;
+        let rry = 2019;        
+        let ti = 11;
+        let mi = 1;
         let RD = D.getDate()
         let RM = (D.getMonth()+1)
         let RY = D.getFullYear()
-        console.dir(RD)
-        if (RD === rd) {
-            TWD = 'Today';
-        }else if (RD === 29){
+        let TI = D.getHours()
+        let MI = D.getMinutes()
+        console.dir(D.getHours())
+        console.dir(D.getMinutes())
+        // if (RD === rd) {
+        //     TWD = 'Today';
+        // }else if (RD === 29){
+        //     TWD = rd - RD + ' day to go';
+        // }else{
+        //     TWD = rd - RD + ' days to go';
+        // }
+        /*if (RD === (rd-1) && RM === rm && RY === ry) {
             TWD = rd - RD + ' day to go';
-        }else{
+            console.log('Yes First If Condition')
+        }else if (RD === rd && RM === rm && RY === ry) {
+            TWD = 'Today';
+        }else if (RD === rrd && RM === rrm && RY === rry) {
+            TWD = 'Today';
+        }else if (RD >= rd && RM >= rm && RY >= ry || RD >= rrd && RM >= rrm && RY >= rry){*/
+            TWD = 'Thanks for your wishes!';
+            // var rech = document.getElementById('comp')
+            // rech.removeChild(rech.childNodes[0])
+        /*}else{
             TWD = rd - RD + ' days to go';
-        }
-        console.dir(TWD)        
+        }*/
+
+        /*if (RD === 1 && RM === 12 && RY === 2019){
+            if (TI >= ti && MI >= mi) {
+                document.getElementById('hecon').innerHTML = 'Happily Married!';
+            }else{
+                document.getElementById('hecon').innerHTML = 'We are getting Married!';
+                console.log('Yes True / False in Date')
+            }
+        }*/
+        
+        // if (RD > rd && RM > rm && RY > ry || RD > rrd && RM > rrm && RY > rry) {
+            // document.getElementById('hecon').innerHTML = 'We are getting Mar/ried!';
+            document.getElementById('hecon').innerHTML = 'Happily Married!';
+        // }else{
+            // document.getElementById('hecon').innerHTML = 'We are getting Married!';            
+            // document.getElementById('hecon').innerHTML = 'Happily Married!';
+        // }
+        
+        console.dir(TWD)
+        console.log(rd+rm+ry)
+        console.log((rd+1)+(rm+1)+ry)
+        console.log(RD+RM+RY)
         function Hide(d){
             document.getElementById(d).innerHTML = '';
         }
@@ -64,7 +107,7 @@
             var Con = document.getElementById(e);
             var Nspan = document.createElement('span');
             Nspan.setAttribute('id','maida');
-            Nspan.innerHTML = '<span><h4>#priyanka #weds #somashekar...</h4></span>' + '<hr>' + '<span><h4>Please celebrate with us the freshness of new life and new love as we exchange our wedding vows.</h4></span><hr>';
+            Nspan.innerHTML = '<span><h4>#priyanka #weds #somashekar...</h4></span>' + '<hr>';
             Con.append(Nspan)
         }        
         
@@ -72,7 +115,7 @@
             var Con = document.getElementById(e);
             var Nspan = document.createElement('span');
             Nspan.setAttribute('id','calda');
-            Nspan.innerHTML = '<h3>Reception : 30-11-2019 | 7:00pm onwards.</h3><div class="UND"></div>' +'<hr>'+ '<h3>Muhurtha : 01-12-2019 | 10:00am to 11:00am.</h3><div class="UND AD"></div>' + '<br>' + '<span><div class="CONPI"><p class="CONP"><img class="HGT" src="./A/HGT.gif"></p><h4 class="CONP">'+TWD+'</h4></div></span>';
+            Nspan.innerHTML = '<h3>Reception : 30-11-2019 | 7:00pm onwards.</h3><div class="UND"></div>' +'<hr>'+ '<h3>Muhurtha : 01-12-2019 | 10:00am to 11:00am.</h3><div class="UND AD"></div>' + '<br>' + '<span><div class="CONPI"><p class="CONP" id="comp"></p><h4 class="CONP">'+TWD+'</h4></div></span>';
             Con.append(Nspan)
         }
         function ShowL(e){
